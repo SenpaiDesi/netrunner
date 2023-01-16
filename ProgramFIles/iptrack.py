@@ -5,6 +5,7 @@ import main
 gi = pygeoip.GeoIP('./geo.dat')
 
 def track():
+    """Track an ip adress's global location and write the output to a file."""
     try:
         tgt = input("Please provide the ip adress:")
         filename = input("Please provide the name for the file to save the results to.")
