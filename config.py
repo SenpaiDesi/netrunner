@@ -4,7 +4,7 @@ import subprocess
 import json
 import requests
 import main
-from Program import iptrack
+from Program import iptrack, portscan
 
 # testx
 
@@ -52,9 +52,11 @@ def update():
 def hack_menu_one():
     os.system('clear')
     print_banner()
-    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Remote shell\n[3]    Port Scanner\n[4]    Show networks and info\n[5]    Soon to come\n[6]    Soon to come.\n\n")
+    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Port Scanner\n[3]    Port Scanner\n[4]    Show networks and info\n[5]    Soon to come\n[6]    Soon to come.\n\n")
     if str(menu_select) == "1":
         iptrack.track()
     if str(menu_select) == "2":
         os.system('clear')
+        portscan.scan()
+
 
