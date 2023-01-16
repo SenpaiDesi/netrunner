@@ -10,7 +10,7 @@ def track():
     try:
         tgt = input("Please provide the ip adress:")
         filename = input("Please provide the name for the file to save the results to.")
-        data = requests.get(api+tgt)
+        data = requests.get(f"http://ip-api.com/json/{str(tgt)}")
         target = data['query']
         
         isp = data['isp']
