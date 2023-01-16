@@ -11,6 +11,7 @@ def start():
     response = requests.get(url=f"http://api.dokkcli.codechaos.net/auth?id={str(id)}&license_key={str(key)}&hostname={hostname}")
     response_json = response.json()
     if response_json[0]["Activated"] == "Yes":
+        os.system("clear")
         print(Fore.RED + "+-+-+-+-+-+-+\n|d|o|k|k|T|X|\n+-+-+-+-+-+-+\n")
         print(Fore.RESET + "\n")
         print("Welcome to dokkcli, if this is your first time using this software. Please use module 1 Setup. \n")
