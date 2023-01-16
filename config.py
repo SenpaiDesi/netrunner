@@ -4,7 +4,7 @@ import subprocess
 import json
 import requests
 import main
-from Program import iptrack, portscan
+from Program import iptrack, portscan, information
 
 # testx
 
@@ -48,6 +48,7 @@ def update():
     os.system("sleep 10")
     main.main()
 
+# hack menus
 
 def hack_menu_one():
     os.system('clear')
@@ -60,3 +61,11 @@ def hack_menu_one():
         portscan.scan()
 
 
+
+
+# Information menu
+
+def info_menu():
+    information.information()
+    os.system('sleep 10')
+    main.main()
