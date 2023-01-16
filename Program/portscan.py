@@ -11,6 +11,7 @@ def loop():
     """Append values"""
     for value in openports:
         open_ports_formatted = f"{value}, "
+        return open_ports_formatted
 def scan():
     global openports
     #Ask for inpute
@@ -26,8 +27,8 @@ def scan():
         # Defining ports using range()
         # Error handeling included
 
-        # will scan ports between 1 to 65,535
-        for port in tqdm(range(1,65536), desc=f"Scanning..", unit=" ports"):
+        # will scan ports between 1 to 1000
+        for port in tqdm(range(1,1000), desc=f"Scanning..", unit=" ports"):
             s = socket(AF_INET, SOCK_STREAM)
             setdefaulttimeout(0.1)
          
