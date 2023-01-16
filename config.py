@@ -3,8 +3,6 @@ import os
 import subprocess
 import json
 import requests
-
-
 def start():
     os.system("clear")
     hostname = subprocess.check_output("whoami")
