@@ -20,9 +20,6 @@ def start():
     response_json = response.json()
     if response_json[0]["Activated"] == "Yes":
         os.system("clear")
-        print(Fore.RED + "+-+-+-+-+-+-+\n|d|o|k|k|T|X|\n+-+-+-+-+-+-+\n")
-        print(Fore.RESET + "\n")
-        print("Welcome to DokkTX, the termux adaptation of DokkCLi. \n")
 
     else:
         os.system("clear")
