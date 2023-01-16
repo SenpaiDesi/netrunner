@@ -41,8 +41,8 @@ def update():
     os.system("pkg install python3")
     os.system("pip install colorama")
     os.system("pip install requests")
-    os.system("pip install subprocess")
     os.system("pip install pygeoip")
+    os.system('pip install tqdm')
     os.system("clear")
     print(Fore.GREEN + "Update successfull!\n")
     os.system("sleep 10")
@@ -53,7 +53,7 @@ def update():
 def hack_menu_one():
     os.system('clear')
     print_banner()
-    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Port Scanner\n[3]    Port Scanner\n[4]    Show networks and info\n[5]    Soon to come\n[6]    Soon to come.\n\n")
+    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Port Scanner\n[3]    Phone number info\n[4]    Soon to come.\n[5]    Soon to come\n[6]    Soon to come.\n\n")
     if str(menu_select) == "1":
         iptrack.track()
     if str(menu_select) == "2":
@@ -70,3 +70,11 @@ def info_menu():
     information.information()
     os.system('sleep 20')
     main.main()
+
+
+def close_menu():
+    os.system('clear')
+    print_banner()
+    print(Fore.RED +  "Thanks for using DokkTX.\nIf you have any issues\nOr bugs:\nLet us know at our discord!\n https://codechaos.net/contact")
+    os.system('sleep 15')
+    exit()

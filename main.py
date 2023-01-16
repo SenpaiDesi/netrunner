@@ -24,6 +24,8 @@ def main():
     
     elif str(menu_select) == "5":
         config.info_menu()
+    elif str(menu_select) == "0":
+        config.close_menu()
 
 
 

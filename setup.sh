@@ -5,3 +5,4 @@ pip install colorama
 pip install requests
 pip install subprocess
 pip install pygeoip
+pip install tqdm
