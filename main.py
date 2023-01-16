@@ -17,7 +17,9 @@ def main():
     if str(menu_select) == "1":
         config.update()
     elif str(menu_select) == "2":
-
+        hack_menu_select = input(Fore.GREEN + "[1]    Network tools and attacks.\n[2]    Password cracking\n[3]    Page downloader\n[4]    Soon to come.\n[5]    Soon to come.\n[0]    Exit\n\n")
+        if str(hack_menu_select) == "1":
+            config.hack_menu_one()
 
 
 
