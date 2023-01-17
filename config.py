@@ -15,7 +15,7 @@ def print_banner():
         
 def start():
     os.system("clear")
-    hostname = subprocess.check_output("whoami")
+    hostname = subprocess.check_output('whoami')
     id = hostname
     key = input("Please enter your license key: \n")
     response = requests.get(url=f"http://api.dokkcli.codechaos.net/auth?id={str(id)}&license_key={str(key)}&hostname={hostname}")
