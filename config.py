@@ -16,9 +16,9 @@ def print_banner():
 def start():
     os.system("clear")
     hostname = subprocess.check_output("whoami")
-    id = subprocess.check_output("whoami")
+    id = os.system('whoami')
     key = input("Please enter your license key: \n")
-    response = requests.get(url=f"http://api.dokkcli.codechaos.net/auth?id={str(id)}&license_key={str(key)}&hostname={hostname}")
+    response = requests.get(url=f"http://api.dokkcli.codechaos.net/auth?id={str(id)}&license_key={str(key)}&hostname={id}")
     response_json = response.json()
     if response_json[0]["Activated"] == "Yes":
         os.system("clear")
