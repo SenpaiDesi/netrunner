@@ -48,7 +48,7 @@ def hack_menu_one():
 def info_menu():
     os.system('clear')
     information.information()
-    os.system('sleep 20')
+    os.system('sleep 10')
     main.main()
 
 
