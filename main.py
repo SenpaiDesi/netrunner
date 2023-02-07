@@ -27,6 +27,7 @@ def main():
         config.close_menu()
     else:
         print(Fore.RED + "Sorry that is not an valid option.\n" + Fore.RESET + "\n")
+        os.system('sleep 5')
         main()
 
 
