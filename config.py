@@ -10,7 +10,7 @@ from Program import iptrack, portscan, information
 
 def print_banner():
     print(Fore.RESET + "\n")
-    print("Welcome to Netrunner. Please pick an option below:\n")
+    print(Fore.RED + "Welcome to Netrunner. Please pick an option below:\n")
         
 
 
@@ -48,13 +48,13 @@ def hack_menu_one():
 def info_menu():
     os.system('clear')
     information.information()
-    os.system('sleep 20')
+    os.system('sleep 10')
     main.main()
 
 
 def close_menu():
     os.system('clear')
     print_banner()
-    print(Fore.RED +  ".\nStay safe out there runner.")
+    print(Fore.RED +  "\nStay safe out there runner.")
     os.system('sleep 15')
     exit()

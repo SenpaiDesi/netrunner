@@ -25,6 +25,9 @@ def main():
         config.info_menu()
     elif str(menu_select) == "0":
         config.close_menu()
+    else:
+        print(Fore.RED + "Sorry that is not an valid option.\n" + Fore.RESET + "\n")
+        main()
 
 
 
