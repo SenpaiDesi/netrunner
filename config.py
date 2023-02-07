@@ -10,7 +10,7 @@ from Program import iptrack, portscan, information
 
 def print_banner():
     print(Fore.RESET + "\n")
-    print("Welcome to Netrunner. Please pick an option below:\n")
+    print(Fore.RED + "Welcome to Netrunner. Please pick an option below:\n")
         
 
 
