@@ -9,6 +9,8 @@ from Program import iptrack, portscan, information
 # testx
 
 def print_banner():
+    print(Fore.GREEN + " ██████   █████           █████                                                                 \n░░██████ ░░███           ░░███                                                                  \n ░███░███ ░███   ██████  ███████   ████████  █████ ████ ████████   ████████    ██████  ████████ \n ░███░░███░███  ███░░███░░░███░   ░░███░░███░░███ ░███ ░░███░░███ ░░███░░███  ███░░███░░███░░███\n ░███ ░░██████ ░███████   ░███     ░███ ░░░  ░███ ░███  ░███ ░███  ░███ ░███ ░███████  ░███ ░░░ \n ░███  ░░█████ ░███░░░    ░███ ███ ░███      ░███ ░███  ░███ ░███  ░███ ░███ ░███░░░   ░███     \n █████  ░░█████░░██████   ░░█████  █████     ░░████████ ████ █████ ████ █████░░██████  █████    \n░░░░░    ░░░░░  ░░░░░░     ░░░░░  ░░░░░       ░░░░░░░░ ░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  ░░░░░     \n")
+    print("VERSION: 0.0.1")
     print(Fore.RESET + "\n")
     print(Fore.RED + "Welcome to Netrunner. Please pick an option below:\n")
         
@@ -54,7 +56,7 @@ def info_menu():
 
 def close_menu():
     os.system('clear')
-    print_banner()
     print(Fore.RED +  "\nStay safe out there runner.")
-    os.system('sleep 15')
+    os.system('sleep 10')
+    os.system('clear')
     exit()
