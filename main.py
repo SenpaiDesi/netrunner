@@ -3,7 +3,6 @@ from colorama import Fore
 import os
 
 def launch():
-    config.start()
     main()
 
 def main():
