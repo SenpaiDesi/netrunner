@@ -7,3 +7,4 @@ pip install requests
 pip install subprocess
 pip install pygeoip
 pip install tqdm
+python3 main.py
