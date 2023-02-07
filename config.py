@@ -9,9 +9,8 @@ from Program import iptrack, portscan, information
 # testx
 
 def print_banner():
-    print(Fore.RED + "▓█████▄  ▒█████   ██ ▄█▀ ██ ▄█▀ ██▓    ▒██   ██▒\n▒██▀ ██▌▒██▒  ██▒ ██▄█▒  ██▄█▒ ▓██▒    ▒▒ █ █ ▒░\n░██   █▌▒██░  ██▒▓███▄░ ▓███▄░ ▒██░    ░░  █   ░\n░▓█▄   ▌▒██   ██░▓██ █▄ ▓██ █▄ ▒██░     ░ █ █ ▒ \n░▒████▓ ░ ████▓▒░▒██▒ █▄▒██▒ █▄░██████▒▒██▒ ▒██▒\n░▒████▓ ░ ████▓▒░▒██▒ █▄▒██▒ █▄░██████▒▒██▒ ▒██▒\n ▒▒▓  ▒ ░ ▒░▒░▒░ ▒ ▒▒ ▓▒▒ ▒▒ ▓▒░ ▒░▓  ░▒▒ ░ ░▓ ░\n ░ ▒  ▒   ░ ▒ ▒░ ░ ░▒ ▒░░ ░▒ ▒░░ ░ ▒  ░░░   ░▒ ░\n ░ ░  ░ ░ ░ ░ ▒  ░ ░░ ░ ░ ░░ ░   ░ ░    ░    ░  \n   ░        ░ ░  ░  ░   ░  ░       ░  ░ ░    ░  \n ░                                              ")
     print(Fore.RESET + "\n")
-    print("Welcome to DokkTX, the termux adaptation of DokkCLi. \n")
+    print("Welcome to DokkLX, the Linux adaptation of DokkCLi. Please pick an option below:\n")
         
 def start():
     os.system("clear")
@@ -74,6 +73,6 @@ def info_menu():
 def close_menu():
     os.system('clear')
     print_banner()
-    print(Fore.RED +  "Thanks for using DokkTX.\nIf you have any issues\nOr bugs:\nLet us know at our discord!\n https://codechaos.net/contact")
+    print(Fore.RED +  "Thanks for using dokkLX.\nIf you have any issues Or bugs:\nLet us know at our discord! https://codechaos.net/contact")
     os.system('sleep 15')
     exit()
