@@ -55,6 +55,6 @@ def info_menu():
 def close_menu():
     os.system('clear')
     print_banner()
-    print(Fore.RED +  ".\nStay safe out there runner.")
+    print(Fore.RED +  "\nStay safe out there runner.")
     os.system('sleep 15')
     exit()
