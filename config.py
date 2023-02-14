@@ -6,7 +6,15 @@ import requests
 import main
 from Program import iptrack, portscan, information
 
-# testx
+
+# Sole banner
+
+def print_sole_banner():
+    print(Fore.RED + " ██████   █████           █████                                                                 \n░░██████ ░░███           ░░███                                                                  \n ░███░███ ░███   ██████  ███████   ████████  █████ ████ ████████   ████████    ██████  ████████ \n ░███░░███░███  ███░░███░░░███░   ░░███░░███░░███ ░███ ░░███░░███ ░░███░░███  ███░░███░░███░░███\n ░███ ░░██████ ░███████   ░███     ░███ ░░░  ░███ ░███  ░███ ░███  ░███ ░███ ░███████  ░███ ░░░ \n ░███  ░░█████ ░███░░░    ░███ ███ ░███      ░███ ░███  ░███ ░███  ░███ ░███ ░███░░░   ░███     \n █████  ░░█████░░██████   ░░█████  █████     ░░████████ ████ █████ ████ █████░░██████  █████    \n░░░░░    ░░░░░  ░░░░░░     ░░░░░  ░░░░░       ░░░░░░░░ ░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  ░░░░░     \n")
+    print("VERSION: 0.0.1                        Made by Iktune.")
+    print(Fore.RESET + "\n")
+
+# banner with text
 
 def print_banner():
     print(Fore.RED + " ██████   █████           █████                                                                 \n░░██████ ░░███           ░░███                                                                  \n ░███░███ ░███   ██████  ███████   ████████  █████ ████ ████████   ████████    ██████  ████████ \n ░███░░███░███  ███░░███░░░███░   ░░███░░███░░███ ░███ ░░███░░███ ░░███░░███  ███░░███░░███░░███\n ░███ ░░██████ ░███████   ░███     ░███ ░░░  ░███ ░███  ░███ ░███  ░███ ░███ ░███████  ░███ ░░░ \n ░███  ░░█████ ░███░░░    ░███ ███ ░███      ░███ ░███  ░███ ░███  ░███ ░███ ░███░░░   ░███     \n █████  ░░█████░░██████   ░░█████  █████     ░░████████ ████ █████ ████ █████░░██████  █████    \n░░░░░    ░░░░░  ░░░░░░     ░░░░░  ░░░░░       ░░░░░░░░ ░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  ░░░░░     \n")
@@ -35,7 +43,7 @@ def update():
 def hack_menu_one():
     os.system('clear')
     print_banner()
-    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Port Scanner\n[3]    Phone number info\n[4]    Soon to come.\n[5]    Soon to come\n[6]    Soon to come.\n\n")
+    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Port Scanner\n[3]    Soon to come.\n[4]    Soon to come.\n[5]    Soon to come\n[6]    Soon to come.\n\n")
     if str(menu_select) == "1":
         iptrack.track()
     if str(menu_select) == "2":
@@ -56,6 +64,7 @@ def info_menu():
 
 def close_menu():
     os.system('clear')
+    print_sole_banner()
     print(Fore.RED +  "\nStay safe out there runner.")
     os.system('sleep 10')
     os.system('clear')
